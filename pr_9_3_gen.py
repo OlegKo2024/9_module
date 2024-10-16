@@ -15,3 +15,12 @@ print(list(first_result))
 
 second_result = (len(first[i]) == len(second[i]) for i in range(min(len(first), len(second))))
 print(list(second_result))
+
+print('Учитываем количество элементов по максимуму')
+
+first = ['Strings', 'Student', 'Computers']
+second = ['Строка', 'Урбан', 'Компьютер', 'Python']
+
+second_result_ = (len(first[i]) == len(second[i]) if i < len(first) and i < len(second) else False for i in
+                  range(max(len(first), len(second))))
+print(list(second_result_))
