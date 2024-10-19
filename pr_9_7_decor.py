@@ -13,7 +13,7 @@ def is_prime(fun_time):
             print(f'{result} - Отрицательное число не является натуральным числом')
             return result  # Выход из функции
         if result < 2:
-            print(f'{result} - Не простое и не составное число')  # Числа меньше 2 - составные
+            print(f'{result} - Не простое и не составное число')
             return result
         is_prime = True
         for i in range(2, int(result ** 0.5) + 1):
